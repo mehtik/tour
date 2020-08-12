@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    @font-face {
+        font-family: Vazir;
+        src: url('vazir-font-v18.0.0/Vazir.eot');
+        src: url('vazir-font-v18.0.0/Vazir.eot?#iefix') format('embedded-opentype'),
+            url('vazir-font-v18.0.0/Vazir.woff') format('woff'),
+            url('vazir-font-v18.0.0/Vazir.ttf') format('truetype');
+        font-weight: normal;
+    }     
+    @font-face {
+        font-family: Vazir;
+        src: url('vazir-font-v18.0.0/Vazir-Bold.eot');
+        src: url('vazir-font-v18.0.0/Vazir-Bold.eot?#iefix') format('embedded-opentype'),
+            url('vazir-font-v18.0.0/Vazir-Bold.woff') format('woff'),
+            url('vazir-font-v18.0.0/Vazir-Bold.ttf') format('truetype');
+        font-weight: bold;
+    }
+    @font-face {
+        font-family: Vazir;
+        src:url('vazir-font-v18.0.0/Vazir-Light.eot');
+        src:url('vazir-font-v18.0.0/Vazir-Light.eot?#iefix') format('embedded-opentype'),
+            url('vazir-font-v18.0.0/Vazir-Light.woff') format('woff'),
+            url('vazir-font-v18.0.0/Vazir-Light.ttf') format('truetype');
+        font-weight: 300;
+    }
+
+    #main {
+        width: 320px;
+        height: 560px;
+        border: 1px solid #c3c3c3;
+        display: flex;
+        flex-flow: column wrap;
+        margin:auto
+    }
+    #mother1 {
+        position: relative;
+        border-bottom:solid 1px black;
+        width: 320px;
+        height: 250px;
+    }
+    #mother2 {
+        position: relative ;
+        background-color:lightgray;
+        width: 320px;
+        height: 308px;
+    }
+    #child1 {
+        position: relative;
+        background: rgba(62, 150, 65, 0.8);
+        width: 120px;
+        height: 25px;
+        top: -37px;
+        left: 190px;
+        text-align: right;
+        font-size: 14px;
+        font-family: 'vazir';
+        font-style: 'bold';
+        margin-left: 5px;
+    }
+    #child2 {
+        position: relative;
+        background: rgba(68, 194, 72, 0.8);
+        width: 120px;
+        height: 25px;
+        top: -14px;
+        left: 175px;
+        text-align: left;
+        font-size: 14px;
+        font-family: 'vazir';
+        font-style: 'bold';
+        margin-right: 5px;
+    }
+    #stars {
+        position: absolute;
+        width: 100px;
+        height: 20px;
+        top: 230px;
+        left: 10px;
+    }
+    .checked {
+        color: orange;
+    }
+    #text {
+        font-family: 'vazir';
+        font-size: small;
+        text-align: right;
+        padding: 30px;
+    }
+    .add {
+        font-family: 'vazir';
+        font-style: 'bold';
+        
+        background-color: hsl(123, 83%, 25%);
+        border-radius: 2px;
+        text-align: center;
+    }
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        opacity: 0.8;
+    }
+    img:hover {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        opacity: 1.0;
+    }
+    button{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 35%;
+        height: 25px;
+    }
+    </style>
+    
+</head>
+<body>
+    <div id="main">
+        <div id="mother1">
+            <img src="IMG_3666.JPG" alt="Gheshm" width="320px" height="250px" >
+            <div id="child1"><p style="color:white">تور قشم گردی</p></div>
+            <div id="stars">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+            </div>
+        </div>
+        <div id="mother2">
+            <div id="child2"><p style="color:white">و جزیره هرمز</p></div>
+            <div id="text">
+                <h4>از 540000 تومان</h4>
+                <p>این فونت ها بر اساس قوانین ساخت فونت و گرافیکی ساخته شده و زیبایی و سادگی فونت ها ارزش فونت ها رو چند برار میکنه . برای دانلود فونت های فارسی مخصوص طراحی وب به ادامه مطلب قسمت جعبه دانلود مراجعه کنید</p>
+            </div>
+            <div style="margin: auto">
+                <button class="add" style="color:white">
+                    جزئیات بیش تر
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
